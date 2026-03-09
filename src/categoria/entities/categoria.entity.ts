@@ -16,5 +16,5 @@ export class Categoria {
     tipo: string;
 
     @OneToMany(() => Produto, (produto) => produto.categoria)
-    produto: Produto[]; // Array de retorno
+    produtos: Produto[]; // Array de retorno
 }

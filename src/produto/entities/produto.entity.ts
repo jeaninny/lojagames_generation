@@ -28,7 +28,7 @@ export class Produto {
     @Column({ length: 255, nullable: false }) //VARCHAR(255) NOT NULL
     foto: string;
 
-    @ManyToOne(() => Categoria, (categoria) => categoria.produto, {
+    @ManyToOne(() => Categoria, (categoria) => categoria.produtos, {
         onDelete: "CASCADE"
     })
     categoria: Categoria; // Chave estrangeira
